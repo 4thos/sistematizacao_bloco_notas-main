@@ -1,0 +1,56 @@
+html, body {
+	width: 400px; /* Defina a largura do popup */
+	height: 600px; /* Defina a altura do popup */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+	background-color: #f0f0f0;
+}
+h1, h2 {
+  text-align: center;
+}
+button {
+	margin: 10px;
+	padding: 10px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	display: block;
+	width: 100%;
+}
+input {
+	width: 100%; /* Deixe o input ocupar 100% da largura do contêiner pai */
+	padding: 10px; /* Adiciona um espaçamento interno ao input */
+	margin: 10px 0; /* Espaçamento externo entre os inputs */
+	border: 1px solid #ccc; /* Borda de cor cinza */
+	border-radius: 5px; /* Bordas arredondadas */
+	font-size: 16px; /* Tamanho da fonte */
+	box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+}
+input:focus {
+	border-color: #007BFF; /* Altera a cor da borda quando o input está em foco */
+	outline: none; /* Remove o contorno padrão do navegador */
+	box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona um leve brilho ao redor */
+}
+button {
+	padding: 10px 20px;
+	background-color: #007BFF; /* Cor de fundo azul */
+	color: white; /* Cor do texto */
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+}
+button:hover {
+  background-color: #0056b3; /* Cor mais escura no hover */
+}
+button:disabled {
+   background-color: #cccccc; /* Cor de fundo quando desabilitado */
+   cursor: not-allowed; /* Cursor de "não permitido" */
+}

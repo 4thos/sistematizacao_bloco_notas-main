@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Bloco de Notas Integrado</title>
+</head>
+<body>
+	<h1>Bloco de Notas Integrado</h1>
+
+	<!-- Campo para adicionar uma nova tarefa -->
+	<input type="text" id="nova-tarefa" name='nova-tarefa' placeholder="Descrição da tarefa">
+	<button id="adicionar-tarefa">Adicionar Tarefa</button>
+
+	<!-- Lista de tarefas -->
+	<ul id="lista-tarefas"></ul> <!-- A lista aparecerá aqui -->
+
+	<!-- Campo para configurar um lembrete -->
+	<input type="text" id="nova-lembrete" placeholder="Descrição do lembrete">
+	<input type="time" id="hora-lembrete">
+	<button id="configurar-lembrete">Configurar Lembrete</button>
+
+	<!-- Botões adicionais -->
+	<button id="iniciar-temporizador">Iniciar Temporizador</button>
+	<button id="parar-temporizador">Parar Temporizador</button>
+	<button id="sincronizar-dados">Sincronizar Dados</button>
+	<button id="exportar-tarefas">Exportar Tarefas</button>
+
+	<script src="js/popup.js"></script>
+</body>
+</html>

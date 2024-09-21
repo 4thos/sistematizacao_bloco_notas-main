@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Bloco de Notas Integrado",
+  "version": "1.0",
+  "description": "Extensão com temporizador, sincronização, tarefas e lembretes.",
+  "permissions": [
+		"storage",  
+		"activeTab",   
+		"scripting", 
+		"webNavigation",
+		"tabs",
+    "notifications",
+    "alarms"
+	],
+  "action": {
+    "default_popup": "src/popup.html",
+    "default_icon": {
+      "16": "src/icons/icon16.png",
+      "48": "src/icons/icon48.png",
+      "128": "src/icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "src/js/background.js"
+  },
+  "icons": {
+    "16": "src/icons/icon16.png",
+    "48": "src/icons/icon48.png",
+    "128": "src/icons/icon128.png"
+  },
+	"content_scripts": [
+		{
+			"all_frames": true,
+			"js": ["src/js/content.js"],
+			"matches": ["*://*/*"],
+      "run_at": "document_end"
+		}
+	]
+}
